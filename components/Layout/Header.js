@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 // Import react scroll
-import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/Logo.svg";
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -23,7 +20,7 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+            <LogoVPN className="h-8 w-auto" /> <strong className="block ml-3">Viaje con Mary</strong>
           </div>
         </nav>
       </header>

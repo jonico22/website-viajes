@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "LaslesVPN",
-  "short_name": "LaslesVPN",
+  "name": "Viaje con mary",
+  "short_name": "ViajeconMary",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#F53838",
-  "description": "LaslesVPN Best VPN For Privacy, Country and Cheapest.",
+  "description": "Agencia de viajes especializada en organizar paquetes turísticos individuales y en grupo en Perú",
   "icons": [
     {
       "src": "/favicon/android-icon-36x36.png",

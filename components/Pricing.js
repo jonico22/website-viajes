@@ -1,12 +1,9 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
-import Testimoni from "./Testimoni";
-import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline.";
-import Maps from "../public/assets/HugeGlobal.svg";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Link from "next/link";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -31,7 +28,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center   py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale : 1.1,
                   transition: {
@@ -40,12 +37,15 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
+                  <a href={"https://www.facebook.com/viajeconmary"} target="_blank">
                   <Image
                     src="/assets/Free.png"
                     width={145}
                     height={165}
                     alt="Free Plan"
                   />
+                  </a>
+                  
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Facebook
@@ -57,7 +57,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center   py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale : 1.1,
                   transition: {
@@ -66,12 +66,14 @@ const Pricing = () => {
                 }}
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <Image
-                  src="/assets/Standard.png"
-                  width={145}
-                  height={165}
-                  alt="Standard Plan"
-                />
+                <a href={'https://www.instagram.com/viajeconmary/'} target="_blank">
+                  <Image
+                    src="/assets/Premium.png"
+                    width={145}
+                    height={165}
+                    alt="Standard Plan"
+                  />
+                </a>
               </div>
               <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                 Instagram
@@ -82,7 +84,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center   py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale : 1.1,
                   transition: {
@@ -91,15 +93,19 @@ const Pricing = () => {
                 }}
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <Image
-                  src="/assets/Premium.png"
-                  width={145}
-                  height={165}
-                  alt="Premium Plan"
-                />
+                <a href={"mailto:contacto@viajeconmary.com?Subject=Aquí%20el%20asunto%20del%20mail"}>
+                  <Image
+                    src="/assets/Standard.png"
+                    width={145}
+                    height={165}
+                    alt="Premium Plan"
+                  />
+                </a>
+                
               </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Por Correo
+              <p className="text-lg text-black-600 font-medium  my-2 sm:my-7">
+                Por Correo <br />
+                contacto@viajeconmary.com
               </p>
               </motion.div>
             </ScrollAnimationWrapper>
