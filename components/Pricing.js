@@ -112,6 +112,16 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center w-full">
+        <a href={"https://www.mincetur.gob.pe/turismo/normas-legales/esnna/"} target="_blank">
+                  <Image
+                    src="/assets/afiche.jpg"
+                    width={384}
+                    height={541}
+                    alt="esnna"
+                  />
+                  </a>
+      </div>
     </div>
   );
 };
